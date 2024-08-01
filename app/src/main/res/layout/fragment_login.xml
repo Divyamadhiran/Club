@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginFrag_container_CL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/fragment_horizontal_margin"
+    android:paddingTop="@dimen/fragment_vertical_margin"
+    android:paddingRight="@dimen/fragment_horizontal_margin"
+    android:paddingBottom="@dimen/fragment_vertical_margin"
+
+    tools:context=".view.base.BaseActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loginFrag_inner_container_CL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/header_loginText_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/login_text"
+            android:textSize="@dimen/text_25sp"
+            android:theme="@style/ILook.TextHead"
+            style="@style/ILook.TextHead"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_Layout_TIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Enter your username"
+            android:textSize="@dimen/text_15sp"
+            app:errorTextColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header_loginText_TV"
+            app:startIconDrawable="@drawable/person_outline_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username_text_TIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textAutoComplete"
+                android:paddingStart="24dp"
+                android:textSize="@dimen/text_15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_Layout_TIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Enter your phone number"
+            android:textSize="@dimen/text_15sp"
+            app:errorTextColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/generate_otp_Btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_Layout_TIL"
+            app:layout_constraintVertical_bias="0.15"
+            app:startIconDrawable="@drawable/phone_call">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_text_TIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:textSize="@dimen/text_15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/generate_otp_Btn"
+            style="@style/ButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="64dp"
+            android:enabled="true"
+            android:text="@string/action_generate_otp"
+            android:textSize="@dimen/text_15sp"
+            android:theme="@style/ButtonTheme"
+            app:cornerRadius="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_Layout_TIL" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/loading_login_IMV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/loginFrag_inner_container_CL"
+        app:layout_constraintEnd_toEndOf="@+id/loginFrag_inner_container_CL"
+        app:layout_constraintStart_toStartOf="@+id/loginFrag_inner_container_CL"
+        app:layout_constraintTop_toTopOf="@+id/loginFrag_inner_container_CL"
+        app:layout_constraintVertical_bias="1.08"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/loading_text_TV"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/loading_login_IMV"
+        app:layout_constraintStart_toStartOf="@+id/loading_login_IMV"
+        app:layout_constraintTop_toBottomOf="@+id/loading_login_IMV"
+        app:layout_constraintVertical_bias="1.5"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ip_text_TV"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/test_phone_Layout_TIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:hint="Testing phone Number"
+        app:hintTextAppearance="@style/hintStyle"
+        app:layout_constraintBottom_toTopOf="@+id/ip_text_TV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loading_text_TV"
+        app:startIconDrawable="@drawable/phone_call">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/test_phone_text_TIL"
+            style="@style/textInputEdittext"
+            android:inputType="none"
+            app:dropDownBackgroundTint="@color/hs_gray" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/child_nav_design"
+    app:startDestination="@id/seeformeScreenFragment">
+
+    <fragment
+        android:id="@+id/seeformeScreenFragment"
+        android:name="com.adv.ilook.view.ui.fragments.seeformescreen.SeeformeScreenFragment"
+        android:label="fragment_seeforme_screen"
+        tools:layout="@layout/fragment_seeforme_screen" >
+        <action
+            android:id="@+id/action_seeformeScreenFragment_to_nav_design"
+            app:destination="@id/nav_design" />
+        <action
+            android:id="@+id/action_seeformeScreenFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+        <action
+            android:id="@+id/action_seeformeScreenFragment_to_callhistoryScreenFragment"
+            app:destination="@id/callhistoryScreenFragment" />
+        <action
+            android:id="@+id/action_seeformeScreenFragment_to_callLogsScreenFragment"
+            app:destination="@id/callLogsScreenFragment" />
+        <action
+            android:id="@+id/action_seeformeScreenFragment_to_contactsScreenFragment"
+            app:destination="@id/contactsScreenFragment" />
+    </fragment>
+    <include app:graph="@navigation/parent_nav_design" />
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.adv.ilook.view.ui.fragments.homescreen.HomeScreenFragment"
+        android:label="HomeScreenFragment" >
+        <action
+            android:id="@+id/action_homeScreenFragment_to_seeformeScreenFragment"
+            app:destination="@id/seeformeScreenFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_ocrScreenFragment"
+            app:destination="@id/ocrScreenFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_aiNavigatorFragment"
+            app:destination="@id/aiNavigatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoCallScreenFragment"
+        android:name="com.adv.ilook.view.ui.fragments.seeformescreen.videocall.VideoCallScreenFragment"
+        android:label="fragment_video_call_screen"
+        tools:layout="@layout/fragment_video_call_screen" >
+        <action
+            android:id="@+id/action_videoCallScreenFragment_self"
+            app:destination="@id/videoCallScreenFragment" />
+        <action
+            android:id="@+id/action_videoCallScreenFragment_to_seeformeScreenFragment"
+            app:destination="@id/seeformeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/callLogsScreenFragment"
+        android:name="com.adv.ilook.view.ui.fragments.seeformescreen.calogs.CallLogsScreenFragment"
+        android:label="fragment_call_logs_screen"
+        tools:layout="@layout/fragment_call_logs_screen" >
+        <action
+            android:id="@+id/action_callLogsScreenFragment_to_videoCallScreenFragment"
+            app:destination="@id/videoCallScreenFragment" />
+        <action
+            android:id="@+id/action_callLogsScreenFragment_to_seeformeScreenFragment"
+            app:destination="@id/seeformeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/callhistoryScreenFragment"
+        android:name="com.adv.ilook.view.ui.fragments.seeformescreen.callhistory.CallhistoryScreenFragment"
+        android:label="fragment_callhistory_screen"
+        tools:layout="@layout/fragment_callhistory_screen" >
+        <action
+            android:id="@+id/action_callhistoryScreenFragment_to_videoCallScreenFragment"
+            app:destination="@id/videoCallScreenFragment" />
+        <action
+            android:id="@+id/action_callhistoryScreenFragment_to_seeformeScreenFragment"
+            app:destination="@id/seeformeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactsScreenFragment"
+        android:name="com.adv.ilook.view.ui.fragments.seeformescreen.contacts.ContactsScreenFragment"
+        android:label="fragment_contacts_screen"
+        tools:layout="@layout/fragment_contacts_screen" >
+        <action
+            android:id="@+id/action_contactsScreenFragment_to_videoCallScreenFragment"
+            app:destination="@id/videoCallScreenFragment" />
+        <action
+            android:id="@+id/action_contactsScreenFragment_to_seeformeScreenFragment"
+            app:destination="@id/seeformeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ocrScreenFragment"
+        android:name="com.adv.ilook.view.ui.fragments.ocrscreen.OcrScreenFragment"
+        android:label="fragment_ocr_screen"
+        tools:layout="@layout/fragment_ocr_screen" />
+    <fragment
+        android:id="@+id/aiNavigatorFragment"
+        android:name="com.adv.ilook.view.ui.fragments.ainavigator.AiNavigatorFragment"
+        android:label="fragment_ai_navigator"
+        tools:layout="@layout/fragment_ai_navigator" />
+</navigation>

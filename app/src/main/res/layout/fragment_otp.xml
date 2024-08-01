@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/otpFrag_container_CL"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ui.fragments.otpscreen.OtpFragment">
+    <!-- ImageView for back arrow -->
+
+    <ImageView
+        android:id="@+id/back_arrow_IMV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:translationZ="90dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/otpFrag_inner_container_CL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.15" >
+
+
+    <TextView
+        android:id="@+id/header_OTPText_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Enter OTP"
+        android:theme="@style/ILook.TextHead"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/sub_OTPContent_text_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="Enter the 6-digit code from the SMS \n sent to +91 00000 00000"
+        android:textColor="@color/hs_gray_808080"
+        android:theme="@style/ILook.TextSub"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/header_OTPText_TV"
+        app:layout_constraintStart_toStartOf="@+id/header_OTPText_TV"
+        app:layout_constraintTop_toBottomOf="@+id/header_OTPText_TV" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otp_input_Layout_TIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/sub_OTPContent_text_TV"
+        app:layout_constraintStart_toStartOf="@+id/sub_OTPContent_text_TV"
+        app:layout_constraintTop_toBottomOf="@+id/sub_OTPContent_text_TV">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp_input_text_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/opensans_light"
+            android:inputType="number"
+            android:gravity="center"
+            android:letterSpacing="0.9"
+            android:hint=""
+            android:textSize="@dimen/text_25sp"
+            android:maxLength="6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_Btn"
+        style="@style/ButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="64dp"
+        android:enabled="true"
+        tools:text="@string/login_now"
+        android:textSize="@dimen/text_15sp"
+        android:theme="@style/ButtonTheme"
+        app:cornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/otp_input_Layout_TIL"
+        app:layout_constraintStart_toStartOf="@+id/otp_input_Layout_TIL"
+        app:layout_constraintTop_toBottomOf="@+id/otp_input_Layout_TIL" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/loading_Otp_IMV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="visible"
+        app:layout_constraintVertical_bias="1.08"
+        app:layout_constraintBottom_toBottomOf="@+id/otpFrag_inner_container_CL"
+        app:layout_constraintEnd_toEndOf="@+id/otpFrag_inner_container_CL"
+        app:layout_constraintStart_toStartOf="@+id/otpFrag_inner_container_CL"
+        app:layout_constraintTop_toTopOf="@+id/otpFrag_inner_container_CL"
+        tools:visibility="visible" />
+    <TextView
+        android:id="@+id/loading_otp_TV"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/loading_Otp_IMV"
+        app:layout_constraintEnd_toEndOf="@+id/loading_Otp_IMV"
+        app:layout_constraintStart_toStartOf="@+id/loading_Otp_IMV"
+        app:layout_constraintTop_toTopOf="@+id/loading_Otp_IMV"
+        app:layout_constraintVertical_bias="1.08"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

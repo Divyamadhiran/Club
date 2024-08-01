@@ -1,0 +1,3737 @@
+{
+  "test": {
+    "phone": [
+      {
+        "number": "1234567890",
+        "name": "Assistive"
+      },
+      {
+        "number": "9874563210",
+        "name": "Visually Impaired"
+      },
+      {
+        "number": "7845924059",
+        "name": "Developer"
+      }
+    ]
+  },
+  "mqtt": {
+    "enable": true
+  },
+  "screens": {
+    "splash_screen": {
+      "current_screen": "splash_screen",
+      "next_screen": "splash_screen_to_login_screen",
+      "select_screen": [ ],
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/seeforme-server-function.appspot.com/o/seeforme_images%2Fhslook_logo.png?alt=media&token=14ecfa9f-e233-48e1-a1ff-1305998004bb",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "HearSight Lookout",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "validation": {
+              "enable": false
+            }
+          },
+          "child": {
+            "text": "Welcome to Safe Life",
+            "helper_text": "",
+            "text_color": "",
+            "text_size": 18,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {},
+        "toast_view": {}
+      },
+      "previous_screen": "finish"
+    },
+    "select_screen_type": {
+      "current_screen": "select_screen_type",
+      "next_screen": "null",
+      "select_screen": [
+        {
+          "current_screen": "select_screen_type",
+          "next_screen": "select_screen_type_to_instruction_screen",
+          "previous_screen": "finish"
+        },
+        {
+          "current_screen": "select_screen_type",
+          "next_screen": "select_screen_type_to_login_screen",
+          "previous_screen": "finish"
+        }
+      ],
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "Choose User Type",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "guide_mode_text": {
+            "text": "Assist",
+            "helper_text": "",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "vi_mode_text": {
+            "text": "Visually Impaired",
+            "helper_text": "",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "guide_btn": {
+            "text": "Assist",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "vi_btn": {
+            "text": "Visually Impaired",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "please wait...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "previous_screen": "finish"
+    },
+    "instruction_screen": {
+      "current_screen": "instruction_screen",
+      "next_screen": "null",
+      "select_screen": [
+        {
+          "current_screen": "instruction_screen",
+          "next_screen": "instruction_screen_to_login_screen",
+          "previous_screen": "instruction_screen_to_select_screen_type"
+        },
+        {
+          "current_screen": "instruction_screen",
+          "next_screen": "instruction_screen_to_login_screen",
+          "previous_screen": "instruction_screen_to_select_screen_type"
+        }
+      ],
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "Privacy Policy and Terms of Use",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "terms_of_use_text": {
+            "text": "Terms of Use",
+            "helper_text": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Terms of Use and Privacy Policy</title>\n</head>\n<body>\n<h1>Terms of Use</h1>\n<h2>1. Introduction</h2>\n<p>Welcome to [Your App Name]. By using our app, you agree to these Terms of Use. If you do not agree, please do not use our app.</p>\n\n<h2>2. Use of the App</h2>\n<p>You must be at least [minimum age] years old to use this app.</p>\n<p>You agree to use the app only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the app.</p>\n\n<h2>3. Permissions</h2>\n<p>Our app requires the following permissions to function properly:</p>\n<ul>\n    <li><strong>USB Permission</strong>: To access USB devices such as cameras.</li>\n    <li><strong>Bluetooth Permission</strong>: For Bluetooth connectivity features.</li>\n    <li><strong>Location Permission</strong>: To provide location-based services.</li>\n    <li><strong>SIM Number for OTP</strong>: To verify your phone number via OTP (One Time Password).</li>\n    <li><strong>Camera and Storage Permission</strong>: To enable video calling and manage media files.</li>\n    <li><strong>Notification Permission</strong>: To send notifications.</li>\n    <li><strong>Background Permission</strong>: To run services in the background for uninterrupted functionality.</li>\n</ul>\n\n<h2>4. User Responsibilities</h2>\n<p>You are responsible for keeping your device and app access secure.</p>\n<p>You must not misuse our app by knowingly introducing viruses, trojans, or other malicious material.</p>\n\n<h2>5. Termination</h2>\n<p>We may terminate or suspend your access to the app immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms.</p>\n\n<h1>Privacy Policy</h1>\n<h2>1. Introduction</h2>\n<p>This Privacy Policy explains how [Your App Name] collects, uses, and discloses information about you when you use our app.</p>\n\n<h2>2. Information Collection</h2>\n<p><strong>Personal Information</strong>: We may collect information such as your name, email address, phone number, and other contact details.</p>\n<p><strong>Permissions</strong>:</p>\n<ul>\n    <li><strong>USB Permission</strong>: To access and control USB devices.</li>\n    <li><strong>Bluetooth Permission</strong>: To connect with Bluetooth devices.</li>\n    <li><strong>Location Permission</strong>: To provide location-based services.</li>\n    <li><strong>SIM Number for OTP</strong>: To verify your identity using your phone number.</li>\n    <li><strong>Camera and Storage Permission</strong>: To enable video calls and manage media files.</li>\n    <li><strong>Notification Permission</strong>: To send notifications regarding app activities.</li>\n    <li><strong>Background Permission</strong>: To run essential services in the background.</li>\n</ul>\n\n<h2>3. Use of Information</h2>\n<p><strong>Personal Information</strong>: To create and manage your account, provide customer support, and improve our services.</p>\n<p><strong>Permissions</strong>:</p>\n<ul>\n    <li><strong>USB and Camera</strong>: To enable video calling features.</li>\n    <li><strong>Bluetooth</strong>: To connect and communicate with Bluetooth devices.</li>\n    <li><strong>Location</strong>: To offer location-based services.</li>\n    <li><strong>SIM Number</strong>: To send OTPs for verification.</li>\n    <li><strong>Storage</strong>: To save and access media files.</li>\n    <li><strong>Notifications</strong>: To keep you informed about app updates and activities.</li>\n    <li><strong>Background Services</strong>: To ensure smooth app functionality even when running in the background.</li>\n</ul>\n\n<h2>4. Sharing of Information</h2>\n<p>We do not share your personal information with third parties except as necessary to provide our services or as required by law.</p>\n\n<h2>5. Data Security</h2>\n<p>We implement appropriate technical and organizational measures to protect your data from unauthorized access, use, or disclosure.</p>\n\n<h2>6. Changes to This Policy</h2>\n<p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>\n\n<h2>7. Contact Us</h2>\n<p>If you have any questions about this Privacy Policy, please contact us at [Your Contact Information].</p>\n\n<h2>Conclusion</h2>\n<p>By using our app, you agree to the collection and use of information in accordance with this Privacy Policy and the terms outlined in the Terms of Use.</p>\n</body>\n</html>",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "check_box": { }
+        },
+        "button_view": {
+          "agree_btn": {
+            "text": "Agreeerdgd",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "disagree_btn": {
+            "text": "Disagree",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "please wait...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "previous_screen": "finish"
+    },
+    "login_screen": {
+      "current_screen": "login_screen",
+      "next_screen": "login_screen_to_otp_screen",
+      "properties": {
+        "color": {
+          "primary_color": "",
+          "secondary_color": "",
+          "enable": false
+        },
+        "image": {
+          "background_image": "",
+          "enable": false
+        }
+      },
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "Login",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "user_name": {
+            "text": "Enter your name",
+            "helper_text": "Username must be >5 characters",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "mobile_number": {
+            "text": "Mobile Number",
+            "helper_text": "Phone number must be 10 digits",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "login": {
+            "text": "Generate OTP",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "Please wait while we verify your credentials...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "select_screen": [
+        {
+          "current_screen": "login_screen",
+          "next_screen": "login_screen_to_otp_screen",
+          "select_screen": [ ],
+          "previous_screen": "finish"
+        }
+      ],
+      "previous_screen": "login_screen_to_instruction_screen"
+    },
+    "otp_screen": {
+      "current_screen": "otp_screen",
+      "next_screen": "otp_screen_to_home_screen",
+      "properties": {
+        "color": {
+          "primary_color": "",
+          "secondary_color": "",
+          "enable": false
+        },
+        "image": {
+          "background_image": "",
+          "enable": false
+        }
+      },
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "Enter OTP",
+            "helper_text": "Enter the 6-digit code from the SMS \n sent to +91 00000 00000",
+            "text_color": "",
+            "helper_text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "otp_code": {
+            "text": "000-000",
+            "helper_text": "",
+            "text_color": "",
+            "helper_text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "generate_otp": {
+            "text": "Generate OTP",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "verify_otp": {
+            "text": "Login Now",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "Please wait while we verify your otp...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "select_screen": [
+        {
+          "current_screen": "login_screen",
+          "next_screen": "login_screen_to_home_screen",
+          "select_screen": [ ],
+          "previous_screen": "finish"
+        }
+      ],
+      "previous_screen": "otp_screen_to_login_screen"
+    },
+    "device_control_screen": {
+      "current_screen": "device_control_screen",
+      "next_screen": "null",
+      "select_screen": [ ],
+      "previous_screen": "device_control_to_home_screen"
+    },
+    "object_detection_screen": {
+      "current_screen": "object_detection_screen",
+      "next_screen": "object_detection_to_output_screen",
+      "select_screen": [ ],
+      "previous_screen": "object_detection_to_home_screen"
+    },
+    "voice_translator_screen": {
+      "current_screen": "voice_translator_screen",
+      "next_screen": "voice_translator_to_output_screen",
+      "select_screen": [ ],
+      "previous_screen": "voice_translator_to_home_screen"
+    },
+    "text_to_speech_screen": {
+      "current_screen": "text_to_speech_screen",
+      "next_screen": "text_to_speech_to_output_screen",
+      "select_screen": [ ],
+      "previous_screen": "text_to_speech_to_home_screen"
+    },
+    "see_for_me_screen": {
+      "current_screen": "see_for_me_screen",
+      "next_screen": "null",
+      "properties": {
+        "color": {
+          "primary_color": "",
+          "secondary_color": "",
+          "enable": false
+        },
+        "image": {
+          "background_image": "",
+          "enable": false
+        }
+      },
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "Login",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "user_name": {
+            "text": "Enter your name",
+            "helper_text": "Username must be >5 characters",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "mobile_number": {
+            "text": "Mobile Number",
+            "helper_text": "Phone number must be 10 digits",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "login": {
+            "text": "Generate OTP",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "Please wait while we verify your credentials...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "select_screen": [
+        {
+          "current_screen": "see_for_me_screen",
+          "next_screen": "see_for_me_screen_to_contacts_screen",
+          "select_screen": [ ],
+          "previous_screen": "see_for_me_screen_to_home_screen"
+        },
+        {
+          "current_screen": "see_for_me_screen",
+          "next_screen": "see_for_me_screen_to_call_logs_screen",
+          "select_screen": [ ],
+          "previous_screen": "see_for_me_screen_to_home_screen"
+        },
+        {
+          "current_screen": "see_for_me_screen",
+          "next_screen": "see_for_me_screen_to_call_history_screen",
+          "select_screen": [ ],
+          "previous_screen": "see_for_me_screen_to_home_screen"
+        }
+      ],
+      "previous_screen": "see_for_me_screen_to_home_screen"
+    },
+    "video_call_screen": {
+      "current_screen": "video_call_screen",
+      "next_screen": "video_call_screen_to_see_for_me_screen",
+      "properties": {
+        "color": {
+          "primary_color": "",
+          "secondary_color": "",
+          "enable": false
+        },
+        "image": {
+          "background_image": "",
+          "enable": false
+        }
+      },
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "VideoCall",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "temperature": {
+            "text": "Temperature",
+            "helper_text": "Mobile temperature",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "call_status": {
+            "text": "Call Status",
+            "helper_text": "phone call status",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "call_button": {
+            "text": "Call",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "Please wait...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "select_screen": [
+        {
+          "current_screen": "video_call_screen",
+          "next_screen": "video_call_screen_to_see_for_me_screen",
+          "select_screen": [ ],
+          "previous_screen": "video_call_screen_to_see_for_me_screen"
+        }
+      ],
+      "previous_screen": "video_call_screen_to_see_for_me_screen"
+    },
+    "contacts_screen": {
+      "current_screen": "contacts_screen",
+      "next_screen": "contacts_screen_to_video_call_screen",
+      "properties": {
+        "color": {
+          "primary_color": "",
+          "secondary_color": "",
+          "enable": false
+        },
+        "image": {
+          "background_image": "",
+          "enable": false
+        }
+      },
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "VideoCall",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "temperature": {
+            "text": "Temperature",
+            "helper_text": "Mobile temperature",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "call_status": {
+            "text": "Call Status",
+            "helper_text": "phone call status",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "call_button": {
+            "text": "Call",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "Please wait while we verify your credentials...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "select_screen": [
+        {
+          "current_screen": "video_call_screen",
+          "next_screen": "video_call_screen_to_see_for_me_screen",
+          "select_screen": [ ],
+          "previous_screen": "see_for_me_screen_to_video_call_screen"
+        }
+      ],
+      "previous_screen": "video_call_screen_to_see_for_me_screen"
+    },
+    "call_logs_screen": {
+      "current_screen": "call_logs_screen",
+      "next_screen": "call_logs_screen_to_video_call_screen",
+      "properties": {
+        "color": {
+          "primary_color": "",
+          "secondary_color": "",
+          "enable": false
+        },
+        "image": {
+          "background_image": "",
+          "enable": false
+        }
+      },
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "Call logs",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "temperature": {
+            "text": "Temperature",
+            "helper_text": "Mobile temperature",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "call_status": {
+            "text": "Call Status",
+            "helper_text": "phone call status",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "call_button": {
+            "text": "Call",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "Please wait while we verify your credentials...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "select_screen": [
+        {
+          "current_screen": "call_logs_screen",
+          "next_screen": "call_logs_screen_to_video_call_screen",
+          "select_screen": [ ],
+          "previous_screen": "call_logs_screen_to_see_for_me_screen"
+        }
+      ],
+      "previous_screen": "call_logs_screen_to_see_for_me_screen"
+    },
+    "call_history_screen": {
+      "current_screen": "call_history_screen",
+      "next_screen": "finish",
+      "properties": {
+        "color": {
+          "primary_color": "",
+          "secondary_color": "",
+          "enable": false
+        },
+        "image": {
+          "background_image": "",
+          "enable": false
+        }
+      },
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "Call history",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "temperature": {
+            "text": "Temperature",
+            "helper_text": "Mobile temperature",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "call_status": {
+            "text": "Call Status",
+            "helper_text": "phone call status",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "call_button": {
+            "text": "Call",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "Please wait...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "select_screen": [
+        {
+          "current_screen": "call_history_screen",
+          "next_screen": "finish",
+          "select_screen": [ ],
+          "previous_screen": "call_history_screen_to_see_for_me_screen"
+        }
+      ],
+      "previous_screen": "call_history_screen_to_see_for_me_screen"
+    },
+    "ocr_screen": {
+      "current_screen": "ocr_screen",
+      "next_screen": "ocr_screen_to_home_screen",
+      "properties": {
+        "color": {
+          "primary_color": "",
+          "secondary_color": "",
+          "enable": false
+        },
+        "image": {
+          "background_image": "",
+          "enable": false
+        }
+      },
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "Login",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "user_name": {
+            "text": "Enter your name",
+            "helper_text": "Username must be >5 characters",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "mobile_number": {
+            "text": "Mobile Number",
+            "helper_text": "Phone number must be 10 digits",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "login": {
+            "text": "Generate OTP",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "Please wait while we verify your credentials...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "select_screen": [
+        {
+          "current_screen": "ocr_screen",
+          "next_screen": "ocr_screen_to_home_screen",
+          "select_screen": [ ],
+          "previous_screen": "ocr_screen_to_home_screen"
+        }
+      ],
+      "previous_screen": "ocr_screen_to_home_screen"
+    },
+    "commodity_classification_screen": {
+      "current_screen": "commodity_classification_screen",
+      "next_screen": "commodity_classification_to_output_screen",
+      "properties": {
+        "color": {
+          "primary_color": "",
+          "secondary_color": "",
+          "enable": false
+        },
+        "image": {
+          "background_image": "",
+          "enable": false
+        }
+      },
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "Login",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "user_name": {
+            "text": "Enter your name",
+            "helper_text": "Username must be >5 characters",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "mobile_number": {
+            "text": "Mobile Number",
+            "helper_text": "Phone number must be 10 digits",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "login": {
+            "text": "Generate OTP",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "Please wait while we verify your credentials...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "select_screen": [
+        {
+          "current_screen": "commodity_classification_screen",
+          "next_screen": "commodity_classification_screen_to_home_screen",
+          "select_screen": [ ],
+          "previous_screen": "commodity_classification_screen_to_home_screen"
+        }
+      ],
+      "previous_screen": "commodity_classification_to_home_screen"
+    },
+    "output_screen": {
+      "current_screen": "output_screen",
+      "next_screen": "finish",
+      "properties": {
+        "color": {
+          "primary_color": "",
+          "secondary_color": "",
+          "enable": false
+        },
+        "image": {
+          "background_image": "",
+          "enable": false
+        }
+      },
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "Login",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "user_name": {
+            "text": "Enter your name",
+            "helper_text": "Username must be >5 characters",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "mobile_number": {
+            "text": "Mobile Number",
+            "helper_text": "Phone number must be 10 digits",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "login": {
+            "text": "Generate OTP",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "Please wait while we verify your credentials...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "select_screen": [
+        {
+          "current_screen": "see_for_me_screen",
+          "next_screen": "see_for_me_screen_to_home_screen",
+          "select_screen": [ ],
+          "previous_screen": "see_for_me_screen_to_home_screen"
+        }
+      ],
+      "previous_screen": "output_screen_to_home_screen"
+    },
+    "home_screen": {
+      "current_screen": "home_screen",
+      "next_screen": "null",
+      "properties": {
+        "color": {
+          "primary_color": "",
+          "secondary_color": "",
+          "enable": false
+        },
+        "image": {
+          "background_image": "",
+          "enable": false
+        }
+      },
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "Login",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "user_name": {
+            "text": "Enter your name",
+            "helper_text": "Username must be >5 characters",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "mobile_number": {
+            "text": "Mobile Number",
+            "helper_text": "Phone number must be 10 digits",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "login": {
+            "text": "Generate OTP",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "Please wait while we verify your credentials...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "menu_view": [
+          {
+            "menu_name": "video_call",
+            "text": "See for me",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "https://firebasestorage.googleapis.com/v0/b/seeforme-server-function.appspot.com/o/seeforme_images%2Fclose_24dp.svg?alt=media&token=9a11bf31-c718-4602-8392-4e4816b65709",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "https://firebasestorage.googleapis.com/v0/b/seeforme-server-function.appspot.com/o/seeforme_images%2Fclose_24dp.svg?alt=media&token=9a11bf31-c718-4602-8392-4e4816b65709",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          {
+            "menu_name": "ocr",
+            "text": "OCR",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          {
+            "menu_name": "commodity",
+            "text": "Commodity",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          {
+            "menu_name": "ai",
+            "text": "AI Vision",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          {
+            "menu_name": "logout",
+            "text": "Logout",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          {
+            "text": "about",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+
+        ]
+      },
+      "select_screen": [
+        {
+          "current_screen": "home_screen",
+          "next_screen": "home_screen_to_object_detection_screen",
+          "previous_screen": "finish"
+        },
+        {
+          "current_screen": "home_screen",
+          "next_screen": "home_screen_to_voice_translator_screen",
+          "previous_screen": "finish"
+        },
+        {
+          "current_screen": "home_screen",
+          "next_screen": "home_screen_to_text_to_speech_screen",
+          "previous_screen": "finish"
+        },
+        {
+          "current_screen": "home_screen",
+          "next_screen": "home_screen_to_see_for_me_screen",
+          "previous_screen": "finish"
+        },
+        {
+          "current_screen": "home_screen",
+          "next_screen": "home_screen_to_commodity_classification_screen",
+          "previous_screen": "finish"
+        },
+        {
+          "current_screen": "home_screen",
+          "next_screen": "home_screen_to_output_screen",
+          "previous_screen": "finish"
+        }
+      ],
+      "previous_screen": "finish"
+    },
+    "ai_navigator_screen": {
+      "current_screen": "ai_navigator_screen",
+      "next_screen": "ai_navigator_screen_to_home_screen",
+      "properties": {
+        "color": {
+          "primary_color": "",
+          "secondary_color": "",
+          "enable": false
+        },
+        "image": {
+          "background_image": "",
+          "enable": false
+        }
+      },
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "AI Navigation",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "user_name": {
+            "text": "Enter your name",
+            "helper_text": "Username must be >5 characters",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "mobile_number": {
+            "text": "Mobile Number",
+            "helper_text": "Phone number must be 10 digits",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "login": {
+            "text": "Generate OTP",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "Please wait while we verify your credentials...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "select_screen": [
+        {
+          "current_screen": "ai_navigator_screen",
+          "next_screen": "ai_navigator_screen_to_home_screen",
+          "select_screen": [ ],
+          "previous_screen": "ai_navigator_screen_to_home_screen"
+        }
+      ],
+      "previous_screen": "ai_navigator_screen_to_home_screen"
+    },
+    "logout_screen": {
+      "current_screen": "logout_screen",
+      "next_screen": "logout_to_login_screen",
+      "properties": {
+        "color": {
+          "primary_color": "",
+          "secondary_color": "",
+          "enable": false
+        },
+        "image": {
+          "background_image": "",
+          "enable": false
+        }
+      },
+      "views": {
+        "image_view": {
+          "icon": {
+            "url": "",
+            "color": "",
+            "width": 100,
+            "height": 100,
+            "enable": true
+          }
+        },
+        "text_view": {
+          "header": {
+            "text": "Login",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "user_name": {
+            "text": "Enter your name",
+            "helper_text": "Username must be >5 characters",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "mobile_number": {
+            "text": "Mobile Number",
+            "helper_text": "Phone number must be 10 digits",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "button_view": {
+          "login": {
+            "text": "Generate OTP",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        },
+        "toast_view": {
+          "login_success": {
+            "text": "verified success",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "login_failure": {
+            "text": "verification failed",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          },
+          "loading": {
+            "text": "Please wait while we verify your credentials...",
+            "text_color": "",
+            "text_size": 15,
+            "input_text_length": {
+              "min_characters": 5,
+              "max_characters": 15
+            },
+            "enable": true,
+            "right_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": true
+            },
+            "left_icon": {
+              "url": "",
+              "color": "",
+              "width": 100,
+              "height": 100,
+              "enable": false
+            },
+            "validation": {
+              "enable": false
+            }
+          }
+        }
+      },
+      "select_screen": [
+        {
+          "current_screen": "see_for_me_screen",
+          "next_screen": "see_for_me_screen_to_home_screen",
+          "select_screen": [ ],
+          "previous_screen": "see_for_me_screen_to_home_screen"
+        }
+      ],
+      "previous_screen": "logout_to_home_screen"
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:start="16dp"
+        android:end="20dp"
+        android:gravity="center_vertical">
+        <shape android:shape="rectangle"
+            android:fillType="evenOdd">
+            <solid android:color="@color/md_theme_onSecondaryContainer" />
+            <corners android:radius="16dp"
+               />
+            <padding
+                android:left="100dp"
+                android:top="100dp"
+                android:right="100dp"
+                android:bottom="100dp" />
+
+        </shape>
+    </item>
+</layer-list>

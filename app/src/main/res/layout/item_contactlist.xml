@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contactList_Container_CV"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="4dp"
+android:outlineAmbientShadowColor="@color/white"
+android:outlineSpotShadowColor="@color/colorPrimary"
+card_view:cardCornerRadius="8dp"
+card_view:cardElevation="4dp"
+ >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="11dp">
+
+    <ImageView
+        android:id="@+id/profile_IMV"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/profile_image_border"
+        android:contentDescription="Profile pic"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contactName_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="start"
+        android:text="ContactName"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:theme="@style/Base.Theme.ILook"
+        card_view:layout_constraintStart_toEndOf="@+id/profile_IMV"
+        card_view:layout_constraintTop_toTopOf="@+id/profile_IMV" />
+
+    <TextView
+        android:id="@+id/online_offline_status_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Online"
+        android:textAppearance="@font/opensans_bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:theme="@style/Base.Theme.ILook"
+        card_view:layout_constraintBottom_toBottomOf="@+id/contactName_TV"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contactNumber_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="start"
+        android:text="ContactNumber"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:theme="@style/Base.Theme.ILook"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintStart_toEndOf="@+id/profile_IMV"
+        card_view:layout_constraintTop_toBottomOf="@+id/contactName_TV"
+        card_view:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/deleteContact_IMV"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:src="@drawable/baseline_delete_24"
+        android:textColor="@color/black"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="@+id/online_offline_status_TV"
+        card_view:layout_constraintHorizontal_bias="0.444"
+        card_view:layout_constraintStart_toStartOf="@+id/online_offline_status_TV"
+        card_view:layout_constraintTop_toBottomOf="@+id/online_offline_status_TV"
+        card_view:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
