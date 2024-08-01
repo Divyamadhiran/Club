@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_design"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.adv.ilook.view.ui.fragments.splash.SplashFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            />
+        <action
+            android:id="@+id/action_splashFragment_self"
+            app:destination="@id/splashFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_selectScreenFragment"
+            app:destination="@id/selectScreenFragment" />
+
+        <action
+            android:id="@+id/action_splashFragment_to_navigation"
+            app:destination="@id/navigation" />
+        <action
+            android:id="@+id/action_splashFragment_to_child_nav_design2"
+            app:destination="@id/child_nav_design" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.adv.ilook.view.ui.fragments.loginscreen.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_splashFragment"
+            app:destination="@id/splashFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
+        <action
+            android:id="@+id/action_loginFragment_self"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.adv.ilook.view.ui.composeui.screen.MainActivity2"
+        android:label="MainActivity2" />
+    <fragment
+        android:id="@+id/selectScreenFragment"
+        android:name="com.adv.ilook.view.ui.fragments.selectscreen.SelectScreenFragment"
+        android:label="SelectScreenFragment" >
+        <action
+            android:id="@+id/action_selectScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_selectScreenFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+        <action
+            android:id="@+id/action_selectScreenFragment_self"
+            app:destination="@id/selectScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionFragment"
+        android:name="com.adv.ilook.view.ui.fragments.instruction.InstructionFragment"
+        android:label="fragment_instruction"
+        tools:layout="@layout/fragment_instruction" >
+        <action
+            android:id="@+id/action_instructionFragment_to_selectScreenFragment"
+            app:destination="@id/selectScreenFragment" />
+        <action
+            android:id="@+id/action_instructionFragment_self"
+            app:destination="@id/instructionFragment" />
+        <action
+            android:id="@+id/action_instructionFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_instructionFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+        <action
+            android:id="@+id/action_instructionFragment_to_otpFragment2"
+            app:destination="@id/otpFragment" />
+        <action
+            android:id="@+id/action_instructionFragment_self2"
+            app:destination="@id/instructionFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.adv.ilook.view.ui.fragments.otpscreen.OtpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" >
+        <action
+            android:id="@+id/action_otpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_otpFragment_to_homeScreenFragment"
+            app:destination="@id/navigation" />
+    </fragment>
+    <navigation android:id="@+id/navigation"
+        app:startDestination="@id/homeScreenFragment"
+        app:graph="@navigation/child_nav_design">
+        <fragment
+            android:id="@+id/homeScreenFragment"
+            android:name="com.adv.ilook.view.ui.fragments.homescreen.HomeScreenFragment"
+            android:label="fragment_home_screen"
+            tools:layout="@layout/fragment_home_screen">
+            <action
+                android:id="@+id/action_homeScreenFragment_to_otpFragment"
+                app:destination="@id/otpFragment" />
+            <action
+                android:id="@+id/action_homeScreenFragment_self"
+                app:destination="@id/homeScreenFragment" />
+        </fragment>
+        <action
+            android:id="@+id/action_global_splashFragment"
+            app:destination="@id/splashFragment" />
+        <action
+            android:id="@+id/action_global_child_nav_design"
+            app:destination="@id/child_nav_design" />
+
+    </navigation>
+
+</navigation>

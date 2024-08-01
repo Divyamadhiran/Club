@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contactListLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:outlineAmbientShadowColor="@color/white"
+    android:outlineSpotShadowColor="@color/colorPrimary"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/baseline_phone_missed_24"
+            android:contentDescription="MissedCallIcon"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contactNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:gravity="start"
+            android:text="ContactName"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:theme="@style/Base.Theme.ILook"
+            card_view:layout_constraintStart_toEndOf="@+id/profile_image"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/missedCallDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Monday, 15 July"
+            android:textColor="@color/RED"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:theme="@style/Base.Theme.ILook"
+            card_view:layout_constraintBottom_toBottomOf="@+id/contactNameTextView"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="@+id/contactNameTextView" />
+
+        <TextView
+            android:id="@+id/contactNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start"
+            android:text="ContactNumber"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:theme="@style/Base.Theme.ILook"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/profile_image"
+            card_view:layout_constraintTop_toBottomOf="@+id/contactNameTextView"
+            card_view:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/missedCallTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:05 pm"
+            android:textColor="@color/RED"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:theme="@style/Base.Theme.ILook"
+            card_view:layout_constraintBottom_toBottomOf="@id/contactNumberTextView"
+            card_view:layout_constraintEnd_toEndOf="@+id/missedCallDate"
+            card_view:layout_constraintHorizontal_bias="1"
+            card_view:layout_constraintStart_toStartOf="@+id/missedCallDate"
+            card_view:layout_constraintTop_toTopOf="@+id/contactNumberTextView"
+            card_view:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

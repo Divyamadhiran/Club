@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_seeforme"
+            android:icon="@drawable/seeforme_menu_24dp"
+            android:title="See for me"
+            android:checked="true"
+            android:layout="@layout/fragment_home_screen"/>
+        <item
+            
+            android:id="@+id/nav_ocr"
+            android:icon="@drawable/ocr_menu_24dp"
+            android:title="OCR"
+            android:layout="@layout/fragment_home_screen"/>
+        <item
+            android:id="@+id/nav_commodity"
+            android:icon="@drawable/commodity_24dp"
+            android:title="Commodity"
+            android:layout="@layout/fragment_home_screen"/>
+        <item
+            android:id="@+id/nav_ai"
+            android:icon="@drawable/ai_navigator_24dp"
+            android:title="AI"
+            android:layout="@layout/fragment_home_screen"/>
+    </group>
+
+    <item android:title="Labels">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@mipmap/ic_launcher_round"
+                android:title="Logout"
+                android:layout="@layout/fragment_home_screen"/>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@mipmap/ic_launcher_round"
+                android:title="Settings"
+                android:layout="@layout/fragment_home_screen"/>
+        </menu>
+    </item>
+</menu>

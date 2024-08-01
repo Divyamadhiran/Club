@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="file://D:/MYSDK/sources/android-34/audio_policy_configuration_V7_0.xsd">
+    <!-- Selected state -->
+    <item android:state_checked="true" android:drawable="@drawable/checked_round_nav_box" />
+    <!-- Pressed state -->
+    <item android:state_pressed="true" android:drawable="@color/nav_item_selected_background" />
+    <!-- Default state -->
+    <item android:drawable="@color/nav_item_default_background" />
+</selector>
